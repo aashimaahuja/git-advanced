@@ -35,7 +35,7 @@ git commit -m 'feat: First Commit'
 
 Push the project on github.
 
-**Bonus**
+**Part 2**
 
 1. Change the remote name from _origin_ to _base_
 2. Update the index.html file
@@ -57,3 +57,7 @@ Push the project on github.
 ```
 git push base
 ```
+
+4. Change the remote name back to origin. Verify if the remote is changed back to origin.
+
+[Git Basic Commands](/docs/basic-commands.md)

@@ -75,3 +75,5 @@ git remote rename <old_remote_name>
 <new_remote_name>
 
 ```
+
+[Create Repo Exercise](/exercises/creatingRepoExercise.md)
