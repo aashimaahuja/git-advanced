@@ -43,3 +43,5 @@ git rebase -i HEAD~3
 ```
 
 ![Alt text](../images/image-20.png)
+
+[Interactive Rebase exercise](/exercises/interactiveRebaseExercise.md)

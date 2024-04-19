@@ -28,7 +28,7 @@ body {
 
 Commit the files using
 
-```
+```shell
 git add index.html styles.css
 git commit -m 'feat: First Commit'
 ```
@@ -54,7 +54,7 @@ Push the project on github.
 
 3. Commit the file and do
 
-```
+```shell
 git push base
 ```
 

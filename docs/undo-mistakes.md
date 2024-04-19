@@ -1,4 +1,4 @@
-## Undo mistakes in Git
+### Undo mistakes in Git
 
 <div style="display:flex; flex-direction:column; gap:16px">
 <details>
@@ -37,25 +37,27 @@ _Note: Amending commits changes the hash which means its entirely new commit. So
 </details>
 
 <details>
-
 <summary>You made a commit and forgot to include one file
 </summary>
-  
+
 ```shell
 git add <forgotten_filename>
 
 git commit --amend --no-edit
 
-````
+```
+
 </details>
 
 <details>
 
-<summary>You were doing some code rafactoring. However the code didn't work properly. So now you want to discard everything and go back the previous state of the project.</summary>
+<summary>
+You were doing some code rafactoring. However the code didn't work properly. So now you want to discard everything and go back the previous state of the project.
+</summary>
 
 ```shell
 git reset --hard HEAD
-````
+```
 
 </details>
 
@@ -126,22 +128,18 @@ git branch <branch_name> hash
 You accidentally deleted a feature branch and realised that you still needed it.
 </summary>
 
-```
-
+```shell
 git reflog
-
 ```
 
 Find the commit with feature branch and run
 
-```
-
+```shell
 git branch <branch_name> <hash>
-
 ```
 
 </details>
-</div>
-```
 
-[Interactive Rebase](interactive-rebase.md)
+[Reflog Exercise](/exercises/reflogExercise.md)
+
+</div>

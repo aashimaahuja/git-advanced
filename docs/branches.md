@@ -6,7 +6,7 @@ The main motto is to always integrate your changes with everyone's changes. All 
 
 **Pros**
 
-- Easy to track changes beacuse of single branch
+- Easy to track changes because of single branch
 
 **Cons**
 
@@ -39,6 +39,8 @@ The main motto is to always integrate your changes with everyone's changes. All 
 Works well for projects where releases are not very frequent like in case of building librraies
 
 **Github flow**
+
+![alt text](../images/image-31.png)
 
 1. Only one long running branch which is main
 2. You cut all the branches feature, bugfix from main

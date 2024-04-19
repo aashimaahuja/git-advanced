@@ -110,4 +110,4 @@ Applying stash
 git stash pop
 ```
 
-[Commits](commits.md)
+[Aliases](aliases.md)

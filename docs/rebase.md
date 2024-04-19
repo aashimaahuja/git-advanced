@@ -4,7 +4,7 @@ With the rebase command, you can take all the changes that were committed master
 
 For this example, you would check out the feature branch, and then rebase it onto the master
 
-```
+```shell
  git checkout featureA
  git rebase master
 ```
