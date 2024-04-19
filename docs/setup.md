@@ -80,4 +80,4 @@ git remote rename <old_remote_name>
 
 Create `.gitignore` file in root of your project. The files or directories mentioned in `.gitignore` will not be tracked
 
-[Create Repo Exercise](/exercises/creatingRepoExercise.md)
+[Create Repo Exercise](../exercises/creatingRepoExercise.md)

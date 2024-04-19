@@ -14,4 +14,4 @@ With pull requests you can invite other people to review your work and give you 
 
 Once your changes have been approved, your branch can be merged to master
 
-[Pull request exercise](/exercises/pullRequestExercise.md)
+[Pull request exercise](../exercises/pullRequestExercise.md)

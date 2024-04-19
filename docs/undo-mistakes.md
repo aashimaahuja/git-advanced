@@ -140,6 +140,6 @@ git branch <branch_name> <hash>
 
 </details>
 
-[Reflog Exercise](/exercises/reflogExercise.md)
+[Reflog Exercise](../exercises/reflogExercise.md)
 
 </div>

@@ -1,3 +1,5 @@
+### Create repo exercise
+
 Create a new project named **git-workshop**. Create two files in it with follwing contents
 
 _index.html_
@@ -60,4 +62,4 @@ git push base
 
 4. Change the remote name back to origin. Verify if the remote is changed back to origin.
 
-[Git Basic Commands](/docs/basic-commands.md)
+[Git Basic Commands](../docs/basic-commands.md)
