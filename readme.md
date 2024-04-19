@@ -1,15 +1,3 @@
-## Welcome to Git course
+npm install
 
-1. [Version Control](docs/version-control.md)
-2. [Setting up Git](docs/setup.md)
-3. [Git Basic Commands](docs/basic-commands.md)
-4. [Commits](docs/commits.md)
-5. [Branches](docs/branches.md)
-6. [Tags](docs/tags.md)
-7. [Creating pull requests](docs/pull-requests.md)
-8. [Aliases](docs/aliases.md)
-9. [Merging](docs/merge.md)
-10. [Squashing](docs/squashing.md)
-11. [Rebasing](docs/rebase.md)
-12. [Correct mistakes in Git](docs/undo-mistakes.md)
-13. [Interactive Rebase](docs/interactive-rebase.md)
+npx mdstart index.md
