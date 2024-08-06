@@ -26,4 +26,10 @@ git tag v1
 git show v1
 ```
 
+**Delete tags**
+
+```shell
+git tag --delete <tag_name>
+```
+
 [Creating a pull request](pull-requests.md)

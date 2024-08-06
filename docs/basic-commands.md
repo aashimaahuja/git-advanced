@@ -41,7 +41,7 @@ git fetch <remote_name>
 **Calculate diff**
 
 ```shell
-git diff origin master
+git diff master origin/master
 ```
 
 **Pull**
@@ -77,7 +77,7 @@ git checkout <branch_name>
 2. Undo changes in a file
 
 ```shell
-git checkout <branch_name>
+git checkout <file_name>
 ```
 
 3. Moving to a commit or tag
