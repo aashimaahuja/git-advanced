@@ -21,6 +21,25 @@ git co feat/featureA
 
 #### Setting up aliases in (.zshrc)
 
+**Some handy git aliases**
+
+```shell
+alias gst='git status'
+alias gcl='git clone'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit'
+alias gca='git commit --amend'
+alias gco='git checkout'
+alias gb='git branch'
+alias glg='git log'
+alias gll='git log --oneline'
+```
+
+<details>
+
+<summary><b>List of all git aliases</b></summary>
+
 ```shell
 #
 # Aliases
@@ -287,4 +306,8 @@ function grename() {
 }
 ```
 
+</details>
+
 [Commits](commits.md)
+
+---
