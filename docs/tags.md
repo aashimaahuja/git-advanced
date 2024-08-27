@@ -1,4 +1,4 @@
-#### Creating tags
+## Creating tags
 
 Tags are typically used to mark release points (v1.0, v2.0 and so on).
 
@@ -32,4 +32,4 @@ git show v1
 git tag --delete <tag_name>
 ```
 
-[Creating a pull request](pull-requests.md)
+[Merging](../docs/merge.md)

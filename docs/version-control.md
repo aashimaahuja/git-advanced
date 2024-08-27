@@ -1,4 +1,4 @@
-#### Version Control
+## Version Control
 
 Version control , also called as source control is the practice of tracking and managing changes to software code.
 
@@ -23,7 +23,9 @@ Distributed Server to avoid single point of failure
 
 ![alt text](../images/image-23.png)
 
-**Git**
+[Git Terminologies](git-terminologies.md)
+
+<!-- **Git**
 
 Tracks history of changes in files
 
@@ -43,4 +45,4 @@ Tracks history of changes in files
 **Git Workflow**
 ![alt text](../images/image-30.png)
 
-[Git setup](setup.md)
+[Git setup](setup.md) -->

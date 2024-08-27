@@ -1,3 +1,5 @@
+## Aliases
+
 #### Setting up Aliases in git config
 
 ```shell
@@ -307,7 +309,5 @@ function grename() {
 ```
 
 </details>
-
-[Commits](commits.md)
 
 ---

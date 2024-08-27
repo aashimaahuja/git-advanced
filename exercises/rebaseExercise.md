@@ -9,4 +9,5 @@
 5. Go to feature branch and rebase master in your feature branch
 6. Your commits would be on top of master and there would be no additional commit
 
-[Undo mistakes in git](../docs/undo-mistakes.md)
+[Creating pull requests](../docs/pull-requests.md)
+

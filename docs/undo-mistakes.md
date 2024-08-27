@@ -1,4 +1,4 @@
-### Undo mistakes in Git
+## Undo mistakes in Git
 
 <div style="display:flex; flex-direction:column; gap:16px">
 <details>

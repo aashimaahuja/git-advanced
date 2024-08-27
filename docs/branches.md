@@ -1,3 +1,32 @@
+## Branches
+
+A branch represents an independent line of development. It consists series of commits. You can create branch from any other branch or from any commit.
+![alt text](../images/branch.png)
+
+
+
+**Listing all branches**
+
+```shell
+git branch
+```
+
+**Creating branches**
+
+```shell
+git branch <branch-name>
+```
+
+```shell
+git checkout -b <branch-name>
+```
+
+**Deleting branches**
+
+```shell
+git branch -D <branch_name>
+```
+
 ### Mainline Development
 
 The main motto is to always integrate your changes with everyone's changes. All teammates sontributes to the mainline branch
@@ -87,26 +116,19 @@ Docs branch
 docs/T-654-update-readme
 ```
 
-**Listing all branches**
+---
 
-```shell
-git branch
+### Moving a commit to another branch
+
+![Alt text](../images/image-3.png)
+
+1. git log and copy the commit hash of the commit you want to move
+2. swicth to the branch where you want to move the commit
+
+```
+git checkout <branch_name>
+git cherry-pick <commit_hash>
 ```
 
-**Creating branches**
-
-```shell
-git branch <branch-name>
-```
-
-```shell
-git checkout -b <branch-name>
-```
-
-**Deleting branches**
-
-```shell
-git branch -D <branch_name>
-```
 
 [Tags](tags.md)

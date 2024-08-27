@@ -1,6 +1,6 @@
-#### Setting up Git
+## Setting up Git
 
-**Downloading Git**
+**1. Downloading Git**
 
 Git is already installed in Mac OS. Check with command
 
@@ -11,7 +11,7 @@ git --version
 Windows users can install git from this link
 https://git-scm.com/download/win
 
-**Git config setup**
+**2. Git config setup**
 
 Add your name and email in git config file (.gitconfig)
 
@@ -42,13 +42,21 @@ If you are unsure about the gitconfig path , check it by this command
 git config --list --show-origin
 ```
 
-**Initialising a git repository**
+**3. Initialising a git repository**
 
 - Git init in the project
 - .git folder is created inside the project
 - git will start tracking your project files
 
-**Pushing existing project to github**
+**4. Adding `.gitignore` file**
+
+Create `.gitignore` file in root of your project. The files or directories mentioned in `.gitignore` will not be tracked
+
+---
+
+### Pushing project to remote (github server)
+
+**1.Pushing existing project to github**
 
 Add remote
 
@@ -76,8 +84,9 @@ git remote rename <old_remote_name>
 
 ```
 
-**Adding `.gitignore` file**
+**2. Cloning project from github**
 
-Create `.gitignore` file in root of your project. The files or directories mentioned in `.gitignore` will not be tracked
+`git clone <remote_repo_url>`
+
 
 [Create Repo Exercise](../exercises/creatingRepoExercise.md)

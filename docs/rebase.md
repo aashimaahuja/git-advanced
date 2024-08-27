@@ -1,4 +1,4 @@
-**Rebase**
+## Rebase
 
 With the rebase command, you can take all the changes that were committed master and replay them on your feature.
 

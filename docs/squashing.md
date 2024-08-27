@@ -1,4 +1,4 @@
-#### Squashing
+## Squashing
 
 To "squash" in Git means to combine multiple commits into one.
 
@@ -41,4 +41,5 @@ A lot of git hosting platforms like github , gitlab , bitbucket provides an opti
 
 ![Alt text](../images/image-10.png)
 
-[Rebasing commits](rebase.md)
+
+[Interactive rebase](interactive-rebase.md)

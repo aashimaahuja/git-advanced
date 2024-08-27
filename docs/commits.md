@@ -1,4 +1,4 @@
-### Commits
+## Commits
 
 Commit is the snapshot of the project taken by git. Snapshots are always committed to the local git repo
 
@@ -6,6 +6,8 @@ Commit is the snapshot of the project taken by git. Snapshots are always committ
 
 ```shell
 git commit -m <commit_message>
+
+git commit --amend -m <new_message>
 ```
 
 ---
@@ -83,18 +85,6 @@ Further reads
 
 https://www.conventionalcommits.org/en/v1.0.0/
 
----
 
-### Moving a commit to another branch
-
-![Alt text](../images/image-3.png)
-
-1. git log and copy the commit hash of the commit you want to move
-2. swicth to the branch where you want to move the commit
-
-```
-git checkout <branch_name>
-git cherry-pick <commit_hash>
-```
 
 [Branches](branches.md)

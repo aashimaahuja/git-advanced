@@ -1,4 +1,4 @@
-### Git Basic Commands
+## Git Basic Commands
 
 **Check status**
 
@@ -20,6 +20,14 @@ git add .
 
 ```shell
 git reset <file_name>
+```
+
+**Create a commit**
+
+```shell
+git commit -m <commit_message>
+
+git commit -am <commit_message>
 ```
 
 **Check commit history**
@@ -60,6 +68,7 @@ git push <remote> <branch>
 git push --force
 ```
 
+
 **Create new branch**
 
 ```shell
@@ -92,6 +101,8 @@ _When you checkout to a commit, you are in detached head state which means the c
 
 **Stash**
 
+A place where you can temporarily store your changes for later use
+
 Pushing files to stash
 
 ```shell
@@ -110,4 +121,4 @@ Applying stash
 git stash pop
 ```
 
-[Aliases](aliases.md)
+[Commits](commits.md)

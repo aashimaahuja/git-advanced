@@ -33,4 +33,4 @@ In your **git-workshop** project,
 6. Create pull request.
 7. Do you see conflicts while merging ?
 
-[Merging](../docs/merge.md)
+[Squashing](../docs/squashing.md)

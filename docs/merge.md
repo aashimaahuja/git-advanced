@@ -1,4 +1,4 @@
-**Merging**
+## Merging
 
 For merging your feature branch into master
 you can do
@@ -30,4 +30,6 @@ git merge master
 
 To make an integration, Git has to create a new commit that contains all the changes and take care of the differences between the branches — this is what we call a merge commit.
 
-[Squashing commits](squashing.md)
+**Merge conflicts**
+
+[Rebase](rebase.md)
