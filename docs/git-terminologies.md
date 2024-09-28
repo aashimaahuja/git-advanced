@@ -27,26 +27,17 @@ Tracks history of changes in files
 
 ![alt text](../images/image-git-repo.png)
 
-
 #### Remote, origin, clone, push , pull
 
 ![alt text](../images/image-git-origin.png)
 
-
 #### Commits
 
 Commit is the snapshot of the project taken by git. Snapshots are always committed to the local git repo.
-
 
 #### Branch
 
 Chain of commits.
 ![alt text](../images/branch.png)
 
----
-
-### Git Workflow
-
-![alt text](../images/image-30.png)
-
-[Git setup](setup.md)
+[Git workflow](git-workflow.md)
