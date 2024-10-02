@@ -88,5 +88,10 @@ git remote rename <old_remote_name>
 
 `git clone <remote_repo_url>`
 
+### Shell theme
+
+Powerline9k
+
+https://blog.woodies11.dev/how-i-set-up-my-terminal-oh-my-zsh-powerline9k-iterm-2/
 
 [Create Repo Exercise](../exercises/creatingRepoExercise.md)

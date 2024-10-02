@@ -8,6 +8,20 @@ Commit is the snapshot of the project taken by git. Snapshots are always committ
 git commit -m <commit_message>
 
 git commit --amend -m <new_message>
+
+git commit --amend --no-edit
+```
+
+---
+
+### Undoing commits
+
+```shell
+git revert <commit_sha>
+
+git reset <commit_sha> / HEAD~(number of commits back)
+
+git reset --hard <commit_sha>
 ```
 
 ---
@@ -85,6 +99,4 @@ Further reads
 
 https://www.conventionalcommits.org/en/v1.0.0/
 
-
-
-[Branches](branches.md)
+[Commits exercise](../exercises/commitsExercise.md)

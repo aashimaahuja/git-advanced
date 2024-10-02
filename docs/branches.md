@@ -3,8 +3,6 @@
 A branch represents an independent line of development. It consists series of commits. You can create branch from any other branch or from any commit.
 ![alt text](../images/branch.png)
 
-
-
 **Listing all branches**
 
 ```shell
@@ -130,5 +128,4 @@ git checkout <branch_name>
 git cherry-pick <commit_hash>
 ```
 
-
-[Tags](tags.md)
+[Branch Exercise](../exercises/banchExercise.md)
