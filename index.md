@@ -11,4 +11,3 @@
 9. [Creating pull requests](docs/pull-requests.md)
 10. [Squashing](docs/squashing.md)
 11. [Interactive Rebase](docs/interactive-rebase.md)
-12. [Aliases](docs/aliases.md)

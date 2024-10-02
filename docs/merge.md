@@ -32,4 +32,4 @@ To make an integration, Git has to create a new commit that contains all the cha
 
 **Merge conflicts**
 
-[Rebase](rebase.md)
+[Merge exercise](../exercises/mergingExercise.md)

@@ -19,4 +19,4 @@ Do not rebase commits that exist outside your repository and that people may hav
 
 ![alt text](../images/image-16.png)
 
-[Merge and Rebase Exercise](../exercises/mergingExercise.md)
+[Rebase Exercise](../exercises/rebaseExercise.md)

@@ -15,4 +15,4 @@
 2. merge the master in your branch with squash. Name your commit.
 3. There should be no merge commit. -->
 
-[Rebase Exercise](rebaseExercise.md)
+[Rebase](../docs/rebase.md)

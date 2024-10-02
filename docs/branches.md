@@ -53,7 +53,7 @@ The main motto is to always integrate your changes with everyone's changes. All 
 
 ### Branching Strategies
 
-**Git flow**
+<!-- **Git flow**
 
 1. Two long running branches (main and develop)
 2. Feature braches are cut from develop and merged back to develop
@@ -63,7 +63,7 @@ The main motto is to always integrate your changes with everyone's changes. All 
 
 ![Alt text](../images/image-2.png)
 
-Works well for projects where releases are not very frequent like in case of building librraies
+Works well for projects where releases are not very frequent like in case of building librraies -->
 
 **Github flow**
 
