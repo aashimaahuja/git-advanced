@@ -27,7 +27,7 @@ git branch -D <branch_name>
 
 ### Mainline Development
 
-The main motto is to always integrate your changes with everyone's changes. All teammates sontributes to the mainline branch
+The main motto is to always integrate your changes with everyone's changes. All teammates contribute to the mainline branch
 
 ![Alt text](../images/image.png)
 
