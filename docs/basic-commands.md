@@ -68,7 +68,6 @@ git push <remote> <branch>
 git push --force
 ```
 
-
 **Create new branch**
 
 ```shell
@@ -99,7 +98,7 @@ _When you checkout to a commit, you are in detached head state which means the c
 
 ![alt text](../images/image-11.png)
 
-**Stash**
+<!-- **Stash**
 
 A place where you can temporarily store your changes for later use
 
@@ -119,6 +118,6 @@ Applying stash
 
 ```shell
 git stash pop
-```
+``` -->
 
 [Commits](commits.md)

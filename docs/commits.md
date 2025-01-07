@@ -4,6 +4,23 @@ Commit is the snapshot of the project taken by git. Snapshots are always committ
 
 ![alt text](../images/image-12.png)
 
+### How to create perfect commits ?
+
+1. Create granular commits
+
+   <img src="../images/commit-1.png" width="600" height="300" />
+
+   <img src="../images/commit-2.png" width="600" height="350" />
+
+2. Write valuable commit message
+   - A brief and concise subject line that summarizes the changes
+   - A descriptive message body that explains the most important facts (and as concisely as possible)
+   - using conventional commits
+
+---
+
+### Amending commits
+
 ```shell
 git commit -m <commit_message>
 
