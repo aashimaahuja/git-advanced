@@ -1,14 +1,10 @@
 ## Git
 
-### 1. Version Control
-
-Tracks history of changes in files
+Git is the most popular open-source version control system (VCS) that tracks changes within the same file and allows us to collaborate.
 
 ![alt text](../images/image-25.png)
 
----
-
-### 2. Collaboration and Reliability
+Git allows collaboration and is distributed which makes it reliable.
 
 ![alt text](../images/image-git-clone.png)
 
@@ -24,6 +20,9 @@ Tracks history of changes in files
 6. Branches
 
 #### Repository
+
+- When we set up git in our project , it creates a .git folder inside the project, which does all the versioning and file tracking.
+- A project with .git folder inside it is referred as a repository.
 
 ![alt text](../images/image-git-repo.png)
 

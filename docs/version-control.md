@@ -4,26 +4,29 @@ Version control , also called as source control is the practice of tracking and 
 
 ![alt text](../images/image-21.png)
 
-**Problem : Maintaining separate files**
+**Drawbacks**
 
-We have to maintain separate files which is not scalable. We want a system which could do version control within a single file.
+1. <b>Maintaining separate files</b>
 
-_Git_Course.docx
-Git_Course_v1.docx
-Git_Course_v2.docx
-Git_Course_final.docx_
+   We have to maintain separate files which is not scalable. We want a system which could do version control within a single file.
 
-**Problem: Collaboration**
+   _Git_Course.docx
+   Git_Course_v1.docx
+   Git_Course_v2.docx
+   Git_Course_final.docx_
+   <br/>
 
-![alt text](../images/image-22.png)
+2. <b>Collaboration</b>
+   Since files only exist in my computer , its difficult to collaborate.
 
-**Problem: Reliability**
+<!-- ![alt text](../images/image-22.png) -->
 
-Distributed Server to avoid single point of failure
+3. <b>Reliability</b>
+   There is a single point of failure. We want a system which is distributed to avoid single point of failure
 
-![alt text](../images/image-23.png)
+<!-- ![alt text](../images/image-23.png) -->
 
-[Git Terminologies](git-terminologies.md)
+[Git and Git Terminologies](git-terminologies.md)
 
 <!-- **Git**
 
