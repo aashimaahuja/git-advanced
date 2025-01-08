@@ -6,4 +6,4 @@
 4. Make two more commits
 5. Remove those two commits
 
-[Branches](../docs/branches.md)
+[Undoing changes in git](../docs/undoing-changes.md)

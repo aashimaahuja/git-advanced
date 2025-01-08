@@ -1,7 +1,11 @@
 ## Branches
 
-A branch represents an independent line of development. It consists series of commits. You can create branch from any other branch or from any commit.
-![alt text](../images/branch.png)
+- When we are creating commits , we are actually linking commit to the parent / previous commit. When we are creating commits , we are actually linking commit to the parent / previous commit.
+
+- when we want to incorporate new features without breaking original code , we need branches
+
+- A branch represents an independent line of development. It consists series of commits. You can create branch from any other branch or from any commit.
+  ![alt text](../images/branch.png)
 
 **Listing all branches**
 
@@ -127,5 +131,20 @@ docs/T-654-update-readme
 git checkout <branch_name>
 git cherry-pick <commit_hash>
 ```
+
+---
+
+### Understanding HEAD
+
+- As we work more and more with branches, you will see a term showing up often during commits: HEAD
+- Head is bascially a pointer to the topmost commit in a branch
+- When you do git log you will see something like
+
+  - commit 03as…e2 (HEAD->master) <br/>
+    <img src="../images/head.png"  />
+
+- you can use HEAD
+  - while resetting to nth commit
+  - in any commands where you need to refer commits
 
 [Branch Exercise](../exercises/banchExercise.md)

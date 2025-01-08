@@ -50,3 +50,5 @@ You can loose shared history if you reset the commits and someone else has alrea
 ```
 git revert is a safer option to undo a commit especially if the commit has already been pushed to remote
 ```
+
+[Branches](../docs/branches.md)
