@@ -19,17 +19,7 @@ Commit is the snapshot of the project taken by git. Snapshots are always committ
 
 ---
 
-### Amending commits
-
-```shell
-git commit -m <commit_message>
-
-git commit --amend -m <new_message>
-
-git commit --amend --no-edit
-```
-
----
+<!-- ---
 
 ### Undoing commits
 
@@ -41,7 +31,7 @@ git reset <commit_sha> / HEAD~(number of commits back)
 git reset --hard <commit_sha>
 ```
 
----
+--- -->
 
 ### Writing commit messages properly
 
@@ -57,10 +47,10 @@ The **Conventional Commits** specification provides an easy set of rules for wri
 
 **Types with Examples**
 
-1. fix: - for bug fixes
-2. feat - for new features
-3. BREAKING CHANGE (use ! to draw attention)
-4. Other types ( build:, chore:, refactor:, test:, style: , docs:)
+1. feat - for new features
+2. fix: - for bug fixes
+3. Other types ( build:, chore:, refactor:, test:, style: , docs:)
+4. BREAKING CHANGE (use ! to draw attention)
 
 **Examples**
 
@@ -84,6 +74,7 @@ chore: Clean up unused dependencies
 
 ```
 feat(lang): add Polish language
+feat(user login): add login form
 ```
 
 _Use ! to draw attention to a commit_
@@ -115,5 +106,15 @@ Co-authored-by: Aashima Ahuja <aashi@example.com>
 Further reads
 
 https://www.conventionalcommits.org/en/v1.0.0/
+
+### Amending commits
+
+```shell
+git commit -m <commit_message>
+
+git commit --amend -m <new_message>
+
+git commit --amend --no-edit
+```
 
 [Commits exercise](../exercises/commitsExercise.md)
