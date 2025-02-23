@@ -1,29 +1,33 @@
-## Aliases
+## Git Aliases
 
-#### Setting up Aliases in git config
+This document provides a comprehensive list of useful Git aliases to streamline your workflow. Setting up aliases can save you time and keystrokes when using Git.
+
+### Setting Up Aliases in `~/.gitconfig`
+
+To edit your global Git configuration file, run:
 
 ```shell
 code ~/.gitconfig
 ```
 
-**Add aliases**
+**Add aliases in the `[alias]` section:**
 
-```
+```ini
 [alias]
     s = status
     co = checkout
 ```
 
-**Running aliases from command line**
+**Running aliases from the command line:**
 
 ```shell
 git s
 git co feat/featureA
 ```
 
-#### Setting up aliases in (.zshrc)
+### Setting Up Aliases in `.zshrc`
 
-**Some handy git aliases**
+For handy Git aliases in your shell, add the following to your `.zshrc`:
 
 ```shell
 alias gst='git status'
@@ -38,9 +42,10 @@ alias glg='git log'
 alias gll='git log --oneline'
 ```
 
-<details>
+### Comprehensive List of Git Aliases
 
-<summary><b>List of all git aliases</b></summary>
+<details>
+<summary><strong>Click to expand the list of all Git aliases</strong></summary>
 
 ```shell
 #
@@ -61,7 +66,7 @@ alias gapt='git apply --3way'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
-alias gbda='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*($(git_main_branch)|development|develop|devel|dev)\s*$)" | command xargs -n 1 git branch -d'
+alias gbda='git branch --no-color --merged | grep -vE "^(\+|\*|\s*($(git_main_branch)|development|develop|devel|dev)\s*$)" | xargs -n 1 git branch -d'
 alias gbD='git branch -D'
 alias gbl='git blame -b -w'
 alias gbnm='git branch --no-merged'
@@ -131,6 +136,7 @@ function ggf() {
   git push --force origin "${b:=$1}"
 }
 compdef _git ggf=git-checkout
+
 function ggfl() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
   git push --force-with-lease origin "${b:=$1}"
@@ -185,8 +191,8 @@ alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
 alias git-svn-dcommit-push='git svn dcommit && git push github $(git_main_branch):svntrunk'
 
-alias gk='\gitk --all --branches'
-alias gke='\gitk --all $(git log -g --pretty=%h)'
+alias gk='gitk --all --branches'
+alias gke='gitk --all $(git log -g --pretty=%h)'
 
 alias gl='git pull'
 alias glg='git log --stat'
@@ -202,7 +208,6 @@ alias glods="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgr
 alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
 alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
-alias glp="_git_log_prettily"
 
 alias gm='git merge'
 alias gmom='git merge origin/$(git_main_branch)'
@@ -255,7 +260,7 @@ alias gsr='git svn rebase'
 alias gss='git status -s'
 alias gst='git status'
 
-# use the default stash push on git 2.13 and newer
+# Use the default stash push on git 2.13 and newer
 is-at-least 2.13 "$git_version" \
   && alias gsta='git stash push' \
   || alias gsta='git stash save'
@@ -301,13 +306,9 @@ function grename() {
 
   # Rename branch locally
   git branch -m "$1" "$2"
+  
   # Rename branch in origin remote
   if git push origin :"$1"; then
     git push --set-upstream origin "$2"
   fi
 }
-```
-
-</details>
-
----

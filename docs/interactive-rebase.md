@@ -1,47 +1,61 @@
-### Powers of Interactive Rebase
+# Powers of Interactive Rebase
 
-_Interactive rebase allows you to rewrite the commit history. You can_
+Interactive rebase is a powerful Git feature that allows you to rewrite commit history. With interactive rebase, you can:
 
-- change commit messages
-- combine multiple commits
-- split and edit existing commits
-- reorder commits
-- delete commits
+- Change commit messages
+- Combine multiple commits
+- Split and edit existing commits
+- Reorder commits
+- Delete commits
 
-#### Change a commit message
+## Change a Commit Message
 
-**_Using ammend_**
+### Using `--amend`
+
+To change the message of the most recent commit, use:
 
 ```shell
 git commit --amend
 ```
 
-_With amend you can only amend last commit_
+> **Note:** The `--amend` option only allows you to modify the last commit.
 
-**_Using Interactive rebase_**
+### Using Interactive Rebase
 
-```shell
-git rebase -i HEAD~3
-```
-
-use reword to change the commit message
-
-![Alt text](../images/image-18.png)
-
-#### Combine two commits
+To change a commit message further back in history, you can use interactive rebase:
 
 ```shell
 git rebase -i HEAD~3
 ```
 
-![Alt text](../images/image-19.png)
+In the editor that opens, replace `pick` with `reword` (or `r`) next to the commit whose message you want to change.
 
-#### Delete a commit
+![Change Commit Message](../images/image-18.png)
+
+## Combine Two Commits
+
+To combine multiple commits into one, initiate an interactive rebase:
 
 ```shell
 git rebase -i HEAD~3
 ```
 
-![Alt text](../images/image-20.png)
+In the editor, change `pick` to `squash` (or `s`) for the commit you want to combine with the previous commit.
 
-[Interactive Rebase exercise](../exercises/interactiveRebaseExercise.md)
+![Combine Commits](../images/image-19.png)
+
+## Delete a Commit
+
+To delete a specific commit, start an interactive rebase:
+
+```shell
+git rebase -i HEAD~3
+```
+
+In the editor, simply remove the line corresponding to the commit you want to delete or change `pick` to `drop`.
+
+![Delete Commit](../images/image-20.png)
+
+## Additional Resources
+
+For practical experience, check out the [Interactive Rebase Exercise](../exercises/interactiveRebaseExercise.md).

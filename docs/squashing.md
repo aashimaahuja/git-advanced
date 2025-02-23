@@ -1,45 +1,56 @@
-## Squashing
+# Squashing Commits in Git
 
-To "squash" in Git means to combine multiple commits into one.
+To "squash" in Git means to combine multiple commits into a single commit. This practice can help maintain a clean and concise commit history.
 
-**When to Squash ?**
+## When to Squash?
 
-Depends on what you have decided as a team. Instead of many individual commits which might be unnecessary only a single commit appears in the main commit history. This can be helpful in keeping commit history clean!
+Deciding when to squash commits depends on your team's workflow and preferences. Here are some common scenarios:
 
-**How to squash**
+- **Clean Commit History**: Instead of having many individual commits that may be unnecessary, squashing allows only a single commit to appear in the main commit history.
+- **Logical Grouping**: Squashing can help group related changes together, making it easier to understand the purpose of a commit.
 
-**_Using Interactive Rebase_**
+## How to Squash Commits
 
-```
+### Using Interactive Rebase
+
+To squash the last three commits, use the following command:
+
+```shell
 git rebase -i HEAD~3
 ```
 
-![Alt text](../images/image-7.png)
+This will open an editor where you can choose which commits to squash. Change the word `pick` to `squash` (or `s`) for the commits you want to combine.
 
-**_Using Merge_**
+![Interactive Rebase](../images/image-7.png)
+
+### Using Merge with Squash
+
+You can also squash commits when merging branches. For example, to squash commits from a feature branch:
 
 ```shell
 git merge --squash feature/authentication
-
 ```
 
-**Merging without squash**
+This command combines all the changes from the `feature/authentication` branch into your current branch as a single commit.
 
-New merge commit is automatically created by git
+### Merging without Squash
 
-![Alt text](../images/image-8.png)
+When you merge without squashing, Git automatically creates a new merge commit that includes all changes:
 
-**Merging with Squash**
+![Merging without Squash](../images/image-8.png)
 
-Manual commit , no automatically added by git
+### Merging with Squash
 
-![Alt text](../images/image-9.png)
+When you merge with squash, you must create a manual commit. Git does not automatically add one:
 
-**Pull requests**
+![Merging with Squash](../images/image-9.png)
 
-A lot of git hosting platforms like github , gitlab , bitbucket provides an option to squash the commits when merging a PR
+## Pull Requests and Squashing
 
-![Alt text](../images/image-10.png)
+Many Git hosting platforms, such as GitHub, GitLab, and Bitbucket, provide an option to squash commits when merging a pull request (PR). This feature can help maintain a clean commit history in the main branch.
 
+![Squashing in Pull Requests](../images/image-10.png)
 
-[Interactive rebase](interactive-rebase.md)
+## Additional Resources
+
+For more detailed guidance on using interactive rebase, refer to the [Interactive Rebase Documentation](interactive-rebase.md).

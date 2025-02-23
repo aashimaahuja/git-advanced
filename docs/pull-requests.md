@@ -1,26 +1,31 @@
-## Pull Requests
+# Pull Requests
 
-#### What are Pull Requests
+## What are Pull Requests?
 
-Pull requests are not a feature of git but is provided by git hosting platforms like Github, Gitlab, Bitbucket. The main goal of pull request is to merge your changes into main branch.
+Pull requests (PRs) are not a feature of Git itself but are provided by Git hosting platforms like GitHub, GitLab, and Bitbucket. The primary goal of a pull request is to propose changes to the main branch of a project, allowing for discussion and review before merging.
 
-#### Problems of merging directly to master
+## Problems with Merging Directly to Main
 
-1. Less Resilient
-2. No way to get feedback
-3. Conflicts
+Merging directly into the `main` branch can lead to several issues:
 
+1. **Less Resilient**: Direct merges can introduce instability into the main branch if not properly vetted.
+2. **No Way to Get Feedback**: Without a pull request, there’s no structured way for team members to provide feedback on changes.
+3. **Conflicts**: Direct merges can lead to conflicts that might not be resolved collaboratively.
 
-#### Why create PRs ?
+## Why Create Pull Requests?
 
-**Collaboration and Code reviews**
+### Collaboration and Code Reviews
 
-With pull requests you can invite other people to review your work and give you feedback.
+Pull requests foster collaboration by allowing team members to review each other's work and provide constructive feedback. This process enhances code quality and ensures that multiple eyes have examined the changes before they are integrated.
 
-![Alt text](../images/image-4.png)
+- **Invite Feedback**: You can invite others to review your code, suggest improvements, and discuss potential issues.
+  
+![Pull Request Review](../images/image-4.png)
 
-![Alt text](../images/image-6.png)
+![Pull Request Approval](../images/image-6.png)
 
-Once your changes have been approved, your branch can be merged to master
+Once your changes have been thoroughly reviewed and approved, your branch can be merged into `main`, ensuring a smooth integration of new features or fixes.
 
-[Pull request exercise](../exercises/pullRequestExercise.md)
+## Additional Resources
+
+For practical experience with pull requests, refer to the [Pull Request Exercise](../exercises/pullRequestExercise.md).
