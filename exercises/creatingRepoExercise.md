@@ -1,65 +1,113 @@
-### Create repo exercise
+### Create Repo Exercise
 
-Create a new project named **git-workshop**. Create two files in it with follwing contents
+In this exercise, you will create a new project named **git-workshop** and perform some basic Git operations. Follow the instructions below:
 
-_index.html_
+#### Part 1: Setting Up the Project
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hello, World!</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-```
+1. **Create a New Project**: 
+   - Create a new directory named `git-workshop`.
 
-_styles.css_
+2. **Create Files**: 
+   - Inside the `git-workshop` directory, create two files with the following contents:
 
-```css
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-```
+   - **`index.html`**:
 
-Commit the files using
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <title>Hello, World!</title>
+       </head>
+       <body>
+         <h1>Hello, World!</h1>
+       </body>
+     </html>
+     ```
 
-```shell
-git add index.html styles.css
-git commit -m 'feat: First Commit'
-```
+   - **`styles.css`**:
 
-Push the project on github.
+     ```css
+     body {
+       font-family: Arial, sans-serif;
+       background-color: #f0f0f0;
+       color: #333;
+       margin: 0;
+       padding: 0;
+     }
+     ```
 
-**Part 2**
+3. **Commit the Files**: 
+   - Use the following commands to stage and commit the files:
 
-1. Change the remote name from _origin_ to _base_
-2. Update the index.html file
+     ```shell
+     git add index.html styles.css
+     git commit -m 'feat: First Commit'
+     ```
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hello, World!</title>
-  </head>
-  <body>
-    <h1>welcome to git course</h1>
-  </body>
-</html>
-```
+4. **Push the Project to GitHub**: 
+   - Ensure you have set up a remote repository on GitHub and push your project:
 
-3. Commit the file and do
+     ```shell
+     git push -u origin main
+     ```
 
-```shell
-git push base
-```
+---
 
-4. Change the remote name back to origin. Verify if the remote is changed back to origin.
+#### Part 2: Updating the Project
 
-[Git Basic Commands](../docs/basic-commands.md)
+1. **Change the Remote Name**: 
+   - Change the remote name from `origin` to `base` using the following command:
+
+     ```shell
+     git remote rename origin base
+     ```
+
+2. **Update the `index.html` File**: 
+   - Modify the `index.html` file to the following content:
+
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <title>Hello, World!</title>
+       </head>
+       <body>
+         <h1>Welcome to the Git Course</h1>
+       </body>
+     </html>
+     ```
+
+3. **Commit the Changes**: 
+   - After updating the file, commit your changes:
+
+     ```shell
+     git add index.html
+     git commit -m 'fix: Update welcome message'
+     ```
+
+4. **Push the Changes**: 
+   - Push the updated file to the remote repository:
+
+     ```shell
+     git push base main
+     ```
+
+5. **Change the Remote Name Back to Origin**: 
+   - Rename the remote back to `origin`:
+
+     ```shell
+     git remote rename base origin
+     ```
+
+6. **Verify the Remote Name**: 
+   - Check if the remote has been changed back to `origin` by running:
+
+     ```shell
+     git remote -v
+     ```
+
+---
+
+### Additional Resources
+
+- [Git Basic Commands](../docs/basic-commands.md)

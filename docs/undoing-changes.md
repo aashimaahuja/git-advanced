@@ -1,54 +1,91 @@
-## Undo changes in git
+# Undoing Changes in Git
 
-### 1. Undo changes in a file
+Managing changes effectively is crucial in Git, especially when mistakes happen. This guide covers various methods to undo changes, unstage files, and revert commits.
+
+## 1. Undo Changes in a File
+
+If you've made changes to a file and want to discard them, you can use:
 
 ```shell
 git checkout <file_name>
-
-git restore file_name
 ```
 
-### 2. Unstage staged changes
+or 
 
 ```shell
-git restore –staged filename
-
-git reset <file_name>
-
-git reset .
-
+git restore <file_name>
 ```
 
-### 3. Undo commits
+### Note:
+- **Caution**: Using these commands will permanently delete any uncommitted changes in the specified file.
 
-#### Using git reset
+## 2. Unstage Staged Changes
 
-- Git reset allows you to remove the commits, or say reset a branch to a specific commit
-- There are types of reset -
-  - Hard reset
-    - Remove commits and don’t keep changes
-    - git reset <commit_hash> --hard
-- Soft reset
-  - Remove commits but keep changes in the files
-  - git reset <commit_hash>
+If you've added changes to the staging area but want to unstage them, you can use:
+
+```shell
+git restore --staged <file_name>
+```
+
+or 
+
+```shell
+git reset <file_name>
+```
+
+To unstage all files:
+
+```shell
+git reset .
+```
+
+### Note:
+- These commands will only remove the files from the staging area; your changes will still be present in your working directory.
+
+## 3. Undo Commits
+
+### Using `git reset`
+
+The `git reset` command allows you to remove commits or reset a branch to a specific commit. There are three types of resets:
+
+- **Hard Reset**: Removes commits and does not keep changes in the working directory.
+  
+  ```shell
+  git reset <commit_hash> --hard
+  ```
+
+- **Soft Reset**: Removes commits but keeps changes in the working directory.
+  
+  ```shell
+  git reset <commit_hash>
+  ```
+
+### Visual Representation
 
 <img src="../images/reset-commit-1.png" width="50%" height="50%" />
 <img src="../images/reset-commit-2.png" width="50%" height="50%" />
 
-```
-Issue with reset:
-You can loose shared history if you reset the commits and someone else has already based his/her work on those commits.
-```
+### Important Consideration
 
-#### Using git revert
+**Issue with Reset**: 
+Using `git reset` can lead to losing shared history if you reset commits that others have based their work on. Always communicate with your team before performing a reset.
 
-- Git revert command also undoes the commits but it creates an additional commit undoing that change.
-- git revert doesn’t change the project history which makes it safe for the commits which are already published on shared repository
+### Using `git revert`
 
-  <img src="../images/undo-commits-2.png" width="500" height="300" />
+The `git revert` command undoes commits by creating a new commit that reverses the changes made by the specified commit. This method is safe for published commits since it does not alter the project history.
 
-```
-git revert is a safer option to undo a commit especially if the commit has already been pushed to remote
+```shell
+git revert <commit_hash>
 ```
 
-[Branches](../docs/branches.md)
+### Visual Representation
+
+<img src="../images/undo-commits-2.png" width="500" height="300" />
+
+### Advantages of `git revert`
+
+- **Safety**: It is a safer option to undo a commit, especially if the commit has already been pushed to a remote repository. It maintains the integrity of the commit history.
+
+## Additional Resources
+
+For more information on branching and managing your repository, refer to the [Branches](../docs/branches.md) document.
