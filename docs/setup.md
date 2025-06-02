@@ -42,6 +42,40 @@ If you are unsure about the gitconfig path , check it by this command
 git config --list --show-origin
 ```
 
+**Creating multiple git config files for different projects**
+
+Work config ~/.gitconfig-work
+
+```shell
+[user]
+name = Work User
+email = work@example.com
+```
+
+Personal config ~/.gitconfig-personal
+
+```shell
+[user]
+name = Personal User
+email = personal@example.com
+```
+
+Update Global `.gitconfig` File
+
+```shell
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/personal/"]
+    path = ~/.gitconfig-personal
+```
+
+Verify the config
+
+```shell
+git config --list
+```
+
 **3. Initialising a git repository**
 
 - Git init in the project
