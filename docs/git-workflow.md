@@ -4,7 +4,7 @@ There are 4 areas where your code lives while working in git
 
 ![alt text](../images/workflow-1.png)
 
-**Step 1**: Clone your project from Remote repository
+**Step 1**: Clone your project from Remote repository / Create project on your local machine
 
 ![alt text](../images/workflow-2.png)
 

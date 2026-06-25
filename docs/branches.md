@@ -1,6 +1,6 @@
 ## Branches
 
-- When we are creating commits , we are actually linking commit to the parent / previous commit. When we are creating commits , we are actually linking commit to the parent / previous commit.
+- When we are creating commits , we are actually linking commit to the parent / previous commit.
 
 - when we want to incorporate new features without breaking original code , we need branches
 
